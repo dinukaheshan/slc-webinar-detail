@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SLC - Webinar Detail Page</title>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="mt-5">
+                <div class="hero-details col-12 d-flex flex-column flex-lg-row text-center mx-auto align-items-center justify-content-center justify-content-lg-between column-gap-3">
+                    <div class="hero-title col-lg-7 col-12 text-center text-lg-start">
+                        All You Should Know About PRINCE2®
+                    </div>
+                    <div class="ab-logo col-12 col-lg-5 d-flex justify-content-center justify-content-lg-end mt-4 mt-lg-0">
+                        <img class="align-self-center" src="images/ab-logo.png" alt="ab-logo">
+                    </div>
+                </div>
+                <div class="hero-video-section d-flex flex-column flex-lg-row col-12 mt-5">
+                    <div class="hero-video col-12 col-lg-7 d-flex position-relative align-self-start justify-content-center justify-content-lg-end">
+                        <img class="mx-auto mx-lg-0 me-lg-auto" src="images/video-thumbnail.png" alt="video-thumbnail" width="90%">
+                        <div class="modal fade" id="modal1" aria-hidden="true" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <video controls autoplay id="video1">
+                                        <source src="images/demo-video.mp4" type="video/mp4">
+                                    </video>
+                                    <img src="images/close.png" id="close-btn-1" class="close-btn" data-bs-dismiss="modal">
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/play.png" id="play-btn-1" data-bs-toggle="modal" href="#modal1" role="button" class="play-btn">
+                    </div>
+                    <div class="webinar-points d-flex flex-column flex-row ms-5 row-gap-4 col-lg-5 mt-5 mt-lg-0">
+                        <div class="webinar-point d-flex align-items-center column-gap-3">
+                            <div class="icon-container d-flex justify-content-center">
+                                <img class="point-icon align-self-center" src="images/icomoon-free_user-tie.png" alt="tutor">
+                            </div>
+                            <div class="text">Expert tutor <span>Angus Duncan</span></div>
+                        </div>
+                        <div class="webinar-point d-flex align-items-center column-gap-3">
+                            <div class="icon-container d-flex justify-content-center">
+                                <img class="point-icon align-self-center" src="images/ic_baseline-video-file.png" alt="tutor">
+                            </div>
+                            <div class="text">Recorded webinar <span>For Future Reference</span></div>
+                        </div>
+                        <div class="webinar-point d-flex align-items-center column-gap-3">
+                            <div class="icon-container d-flex justify-content-center">
+                                <img class="point-icon align-self-center" src="images/ph_chat-text-fill.png" alt="tutor">
+                            </div>
+                            <div class="text">Interactive sessions <span>Q&A with Tutor</span></div>
+                        </div>
+                        <div class="webinar-point d-flex align-items-center column-gap-3">
+                            <div class="icon-container d-flex justify-content-center">
+                                <img class="point-icon align-self-center" src="images/teenyicons_discount-solid.png" alt="tutor">
+                            </div>
+                            <div class="text">Avail discounts & promos <span>On SLC Courses</span></div>
+                        </div>
+                        <div class="webinar-point d-flex align-items-center column-gap-3">
+                            <div class="icon-container d-flex justify-content-center">
+                                <img class="point-icon align-self-center" src="images/iconamoon_certificate-badge-fill.png" alt="tutor">
+                            </div>
+                            <div class="text">Awarded by <span>Axelos</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Webinar Section -->
+    <section class="live-webinar">
+        <div class="container">
+            <div class="d-flex flex-column flex-lg-row col-12 column-gap-5">
+                <div class="live-webinar-text col-lg-6 col-12 text-lg-start text-center">
+                    <div class="title text-lg-start text-center">Get ready for free Live Webinar</div>
+                    <div class="description text-lg-start text-center">
+                        Take advantage of our FREE Live Webinars and build your professional skillset!
+                        Join us as we revolutionise the world of educational webinars at South London College.
+                        You will receive comprehensive career guidance session along with amazing discounts when enrolling for our courses!
+                        <br><br>
+                        Join our free web talks to learn what PRINCE2® is all about. Interactive, fun and informative live webinars delivered to wherever you are in the world!
+                    </div>
+                    <a class="join-free-btn" href="#">Join Free</a>
+                </div>
+                <form class="live-webinar-form col-6 col-12 d-flex flex-column justify-content-start align-items-end mt-5 mt-lg-0">
+                    <div class="row col-12">
+                        <div class="col-6">
+                            <label for="first-name" class="form-label">First name</label>
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="first-name">
+                        </div>
+                        <div class="col-6">
+                            <label for="Last-name" class="form-label">Last name</label>
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="Last-name">
+                        </div>
+                    </div>
+                    <div class="col-12 row mt-3">
+                        <div>
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Email" aria-label="email" id="email">
+                        </div>
+                    </div>
+                    <div class="col-12 row mt-3">
+                        <div>
+                            <label for="country" class="form-label">Country</label>
+                            <input type="text" class="form-control" placeholder="Select your country" aria-label="country" id="country">
+                        </div>
+                    </div>
+                    <div class="col-12 row mt-3">
+                        <div>
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" placeholder="Phone" aria-label="phone" id="phone">
+                        </div>
+                    </div>
+                    <div class="col-12 row mt-3">
+                        <div>
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" placeholder="Type your message here" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <a class="enquire-btn d-flex ms-lg-4 mx-auto me-auto" href="#">Enquire</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Webinar Session Plan Section -->
+    <section class="session-plan">
+        <div class="container">
+            <div class="section-title">
+                Lorem ipsum dolar si maert
+            </div>
+            <div class="plan-details mt-5">
+                <div class="plan plan-1 col-12 d-flex align-items-center">
+                    <div class="number col-1">01</div>
+                    <div class="duration ms-3 ms-lg-5 col-2">06:00 PM - 06:05 PM</div>
+                    <div class="description ms-3 ms-lg-5 col-9">Welcome Note</div>
+                </div>
+                <div class="plan plan-2 col-12 d-flex align-items-start">
+                    <div class="number col-1">02</div>
+                    <div class="duration ms-3 ms-lg-5 col-2">06:00 PM - 06:05 PM</div>
+                    <div class="description ms-3 ms-lg-5 col-9">
+                        Let’s get to know each other Introduce the Panelists
+                        <div class="details-list d-flex row-gap-3 flex-column mt-4">
+                            <div class="d-flex column-gap-3 align-items-center">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Introduce the facilitator – Angus Duncan</span>
+                            </div>
+                            <div class="d-flex column-gap-3 align-items-center">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Introduce the Course Advisor – Gavin Fernando</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan plan-3 col-12 d-flex align-items-start">
+                    <div class="number col-1">03</div>
+                    <div class="duration ms-3 ms-lg-5 col-2">06:00 PM - 06:05 PM</div>
+                    <div class="description ms-3 ms-lg-5 col-9">
+                        PRINCE2® - Are you prepared for your PRINCE2® foundation exams?
+                        <div class="details-list d-flex row-gap-3 flex-column mt-4">
+                            <div class="d-flex column-gap-3 align-items-center">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>How do PRINCE2 foundation exams take place?</span>
+                            </div>
+                            <div class="d-flex column-gap-3 align-items-center">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>How to get ready for the exam?</span>
+                            </div>
+                            <div class="d-flex column-gap-3 align-items-center">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Where have students gone wrong?</span>
+                            </div>
+                            <div class="d-flex column-gap-3 align-items-center">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Manage your time during the exam</span>
+                            </div>
+                            <div class="d-flex column-gap-3 align-items-center">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Top 10 tips to pass your PRINCE2 foundation exams.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan plan-4 col-12 d-flex align-items-center">
+                    <div class="number col-1">04</div>
+                    <div class="duration ms-3 ms-lg-5 col-2">06:00 PM - 06:05 PM</div>
+                    <div class="description ms-3 ms-lg-5 col-9">Thank Angus Duncan and Handover to the Course Advisor</div>
+                </div>
+                <div class="plan plan-5 col-12 d-flex align-items-start">
+                    <div class="number col-1">05</div>
+                    <div class="duration ms-3 ms-lg-5 col-2">06:00 PM - 06:05 PM</div>
+                    <div class="description ms-3 ms-lg-5 col-9">
+                        Let’s get to know each other Introduce the Panelists
+                        <div class="details-list d-flex row-gap-3 flex-column mt-4">
+                            <div class="d-flex column-gap-3 align-items-center">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>What is SLC ?</span>
+                            </div>
+                            <div class="d-flex column-gap-3 align-items-center">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>What we offer on SLC ?</span>
+                            </div>
+                            <div class="d-flex column-gap-3 align-items-center">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Hint on discounts and offers ?</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan plan-6 col-12 d-flex align-items-start">
+                    <div class="number col-1">06</div>
+                    <div class="duration ms-3 ms-lg-5 col-2">06:00 PM - 06:05 PM</div>
+                    <div class="description ms-3 ms-lg-5 col-9">
+                        1st part of the Mock exam (10 questions for 10 minutes)
+                    </div>
+                </div>
+                <div class="plan plan-7 col-12 d-flex align-items-start">
+                    <div class="number col-1">07</div>
+                    <div class="duration ms-3 ms-lg-5 col-2">06:00 PM - 06:05 PM</div>
+                    <div class="description ms-3 ms-lg-5 col-9 d-flex flex-column row-gap-3">
+                        <div>
+                            2nd part of the Mock exam (10 questions for 10 minutes)
+                        </div>
+                        <div>
+                            Discuss questions
+                        </div>
+                    </div>
+                </div>
+                <div class="plan plan-8 col-12 d-flex align-items-start">
+                    <div class="number col-1">08</div>
+                    <div class="duration ms-3 ms-lg-5 col-2">06:00 PM - 06:05 PM</div>
+                    <div class="description ms-3 ms-lg-5 col-9">
+                        1st part of the Mock exam (10 questions for 10 minutes)
+                    </div>
+                </div>
+                <div class="plan plan-9 col-12 d-flex align-items-start">
+                    <div class="number col-1">09</div>
+                    <div class="duration ms-3 ms-lg-5 col-2">06:00 PM - 06:05 PM</div>
+                    <div class="description ms-3 ms-lg-5 col-9">
+                        <div class="d-flex flex-column row-gap-3">
+                            <div>Let’s get to know each other Introduce the Panelists</div>
+                            <div>Discounts</div>
+                        </div>
+                        <div class="details-list d-flex row-gap-3 flex-column mt-4">
+                            <div class="d-flex column-gap-3 align-items-center">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>How to get registered with PRINCE2</span>
+                            </div>
+                            <div class="d-flex column-gap-3 align-items-center">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Contact SLC </span>
+                            </div>
+                            <div class="d-flex column-gap-3 align-items-center">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Request to Fill the Survey</span>
+                            </div>
+                            <div class="d-flex column-gap-3 align-items-center">
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Thank you</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Webinar Session Line Up Section -->
+    <section class="line-up">
+        <div class="container">
+            <div class="d-flex flex-column flex-lg-row justify-content-between">
+                <div class="section-title text-center text-lg-start">
+                    Discover what we line up for you
+                </div>
+                <div class="mt-5 mt-lg-0 mx-auto mx-lg-0">
+                    <a class="download-btn">Download Brochure</a>
+                </div>
+            </div>
+            <div class="line-ups mt-5 d-flex flex-column row-gap-4">
+                <div class="line-up-item line-up-1 d-flex flex-column flex-lg-row col-12">
+                    <div class="d-flex col-lg-9 col-12">
+                        <div class="session-number d-flex column-gap-3 align-items-center col-3 col-lg-3">
+                            <img src="images/ic_baseline-video-file-1.png" alt="">
+                            <span>Session 1</span>
+                        </div>
+                        <div class="session-number d-flex column-gap-3 align-items-center col-4 col-lg-4">
+                            <img src="images/mingcute_calendar-fill.png" alt="">
+                            <span>27th August 2023</span>
+                        </div>
+                        <div class="session-number d-flex column-gap-3 align-items-center col-5 col-lg-5">
+                            <img src="images/mingcute_time-fill.png" alt="">
+                            <span>12:00 PM - 13:00 PM (BST)</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 d-flex flex justify-content-lg-end justify-content-center mt-4 mt-lg-0">
+                        <a class="join-free-btn" href="#">Join Free</a>
+                    </div>
+                </div>
+                <div class="line-up-item line-up-1 d-flex flex-column flex-lg-row col-12">
+                    <div class="d-flex col-lg-9 col-12">
+                        <div class="session-number d-flex column-gap-3 align-items-center col-3 col-lg-3">
+                            <img src="images/ic_baseline-video-file-1.png" alt="">
+                            <span>Session 2</span>
+                        </div>
+                        <div class="session-number d-flex column-gap-3 align-items-center col-4 col-lg-4">
+                            <img src="images/mingcute_calendar-fill.png" alt="">
+                            <span>28th August 2023</span>
+                        </div>
+                        <div class="session-number d-flex column-gap-3 align-items-center col-5 col-lg-5">
+                            <img src="images/mingcute_time-fill.png" alt="">
+                            <span>12:00 PM - 13:00 PM (BST)</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 d-flex flex justify-content-lg-end justify-content-center mt-4 mt-lg-0">
+                        <a class="join-free-btn" href="#">Join Free</a>
+                    </div>
+                </div>
+                <div class="line-up-item line-up-1 d-flex flex-column flex-lg-row col-12">
+                    <div class="d-flex col-lg-9 col-12">
+                        <div class="session-number d-flex column-gap-3 align-items-center col-3 col-lg-3">
+                            <img src="images/ic_baseline-video-file-1.png" alt="">
+                            <span>Session 3</span>
+                        </div>
+                        <div class="session-number d-flex column-gap-3 align-items-center col-4 col-lg-4">
+                            <img src="images/mingcute_calendar-fill.png" alt="">
+                            <span>29th August 2023</span>
+                        </div>
+                        <div class="session-number d-flex column-gap-3 align-items-center col-5 col-lg-5">
+                            <img src="images/mingcute_time-fill.png" alt="">
+                            <span>12:00 PM - 13:00 PM (BST)</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 d-flex flex justify-content-lg-end justify-content-center mt-4 mt-lg-0">
+                        <a class="join-free-btn" href="#">Join Free</a>
+                    </div>
+                </div>
+                <div class="line-up-item line-up-1 d-flex flex-column flex-lg-row col-12">
+                    <div class="d-flex col-lg-9 col-12">
+                        <div class="session-number d-flex column-gap-3 align-items-center col-3 col-lg-3">
+                            <img src="images/ic_baseline-video-file-1.png" alt="">
+                            <span>Session 4</span>
+                        </div>
+                        <div class="session-number d-flex column-gap-3 align-items-center col-4 col-lg-4">
+                            <img src="images/mingcute_calendar-fill.png" alt="">
+                            <span>30th August 2023</span>
+                        </div>
+                        <div class="session-number d-flex column-gap-3 align-items-center col-5 col-lg-5">
+                            <img src="images/mingcute_time-fill.png" alt="">
+                            <span>12:00 PM - 13:00 PM (BST)</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 d-flex flex justify-content-lg-end justify-content-center mt-4 mt-lg-0">
+                        <a class="join-free-btn" href="#">Join Free</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Webinar Session Section -->
+    <section class="free-webinar">
+        <div class="container">
+            <div class="section-title">
+                SLC BrightMinds, free webinar!
+            </div>
+            <div class="mt-5 free-webinar-text">
+                We gather the brightest minds in the industry to create a pathway for your career!
+                Our Free Live Webinars are all about creating a rewarding experience for learners to explore what they plan to study.
+                Create a rewarding and unstoppable project management career by learning the basics of the PRINCE2® framework.
+                Join an interactive session with non-other than the pro of project management Angus Duncan,
+                to learn the proven strategies and methods and get ahead in your project management game.
+                <br><br>
+                That’s not all we also have a Q&A session and a career coach joining the webinar to help you get close to your professional success.
+                All participants will get a recording of the online session. For further information contact, info@southlondoncollege.org
+                <br><br>
+                <span>Join this excellent FREE live webinar to take full control of your career!</span>
+            </div>
+            <div class="mt-5">
+                <a class="free-webinar-brochure-btn">Download Brochure</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Experts Section -->
+    <section class="industry-experts">
+        <div class="container">
+            <div class="tutor">
+                <div class="section-title">
+                    Learn from the industry experts
+                </div>
+                <div class="tutor d-flex column-gap-5 mt-5 mt-lg-0">
+                    <div class="tutor-details">
+                        <div class="tutor-name mt-5">
+                            Sean Davenport
+                        </div>
+                        <div class="tutor-title">
+                            Programme Leader, coaching and mentoring
+                        </div>
+                        <div class="mt-4">
+                            Sean Davenport is a highly experienced Senior CI professional, Lean Six Sigma expert and data driven problem solver.
+                            Certified as Master Black Belt (2005), he has led the development,
+                            deployment and execution of business wide Lean Six Sigma and change management initiatives multiple times in different industries.
+                            <br><br>
+                            He has successfully mentored over 200 projects and encourages those starting their
+                            Lean Six Sigma journey to focus on outcomes and to use the method, tools, and personal capabilities to secure project success.
+                        </div>
+                    </div>
+                    <div class="tutor-image">
+                        <img src="images/tutor-1.png" alt="">
+                    </div>
+                </div>
+                <div class="tutor d-flex column-gap-5 mt-5 mt-lg-0">
+                    <div class="tutor-image">
+                        <img src="images/tutor-2.png" alt="">
+                    </div>
+                    <div class="tutor-details">
+                        <div class="tutor-name mt-5">
+                            Sean Davenport
+                        </div>
+                        <div class="tutor-title">
+                            Programme Leader, coaching and mentoring
+                        </div>
+                        <div class="mt-4">
+                            Sean Davenport is a highly experienced Senior CI professional, Lean Six Sigma expert and data driven problem solver.
+                            Certified as Master Black Belt (2005), he has led the development,
+                            deployment and execution of business wide Lean Six Sigma and change management initiatives multiple times in different industries.
+                            <br><br>
+                            He has successfully mentored over 200 projects and encourages those starting their
+                            Lean Six Sigma journey to focus on outcomes and to use the method, tools, and personal capabilities to secure project success.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Takeaways Section -->
+    <section class="key-takeaways">
+        <div class="container">
+            <div class="section-title">
+                Key takeaways
+            </div>
+            <div class="takeaways d-flex row-gap-4 flex-column mt-5">
+                <div class="d-flex column-gap-3 align-items-center">
+                    <i class="fa-solid fa-circle"></i>
+                    <span>Skyrocket your skills and career by learning success secrets from an expert</span>
+                </div>
+                <div class="d-flex column-gap-3 align-items-center">
+                    <i class="fa-solid fa-circle"></i>
+                    <span>Learn how you can use Six Sigma tools to enhance business processes</span>
+                </div>
+                <div class="d-flex column-gap-3 align-items-center">
+                    <i class="fa-solid fa-circle"></i>
+                    <span>Learn to reduce defects in business processes and develop your communication skills</span>
+                </div>
+                <div class="d-flex column-gap-3 align-items-center">
+                    <i class="fa-solid fa-circle"></i>
+                    <span>Find out more about Six Sigma fundamentals to help increase the quality of your products</span>
+                </div>
+                <div class="d-flex column-gap-3 align-items-center">
+                    <i class="fa-solid fa-circle"></i>
+                    <span>Learn more about the challenges awaiting you in today’s complex business environment</span>
+                </div>
+                <div class="d-flex column-gap-3 align-items-center">
+                    <i class="fa-solid fa-circle"></i>
+                    <span>Engage and interact with the best trainer/business coach on a personal level</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unique Perks Section -->
+    <section class="unique-perks">
+        <div class="container">
+            <div class="section-title">
+                Unique perks for participants
+            </div>
+            <div class="takeaways d-flex row-gap-4 flex-column mt-5">
+                <div class="d-flex column-gap-3 align-items-center">
+                    <i class="fa-solid fa-circle"></i>
+                    <span>Participation certificate</span>
+                </div>
+                <div class="d-flex column-gap-3 align-items-center">
+                    <i class="fa-solid fa-circle"></i>
+                    <span>Discover the benefits of Six Sigma certification with the best coach</span>
+                </div>
+                <div class="d-flex column-gap-3 align-items-center">
+                    <i class="fa-solid fa-circle"></i>
+                    <span>Get free updates on future webinar sessions</span>
+                </div>
+                <div class="d-flex column-gap-3 align-items-center">
+                    <i class="fa-solid fa-circle"></i>
+                    <span>Benefit from webinar recordings and replay anytime</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Success Roadmap Section -->
+    <section class="career-success">
+        <div class="container">
+            <div class="d-flex col-12 flex-column flex-lg-row column-gap-5">
+                <div class="career-success-text col-lg-6 col-12">
+                    <div class="title text-center text-lg-start">Roadmap to career success</div>
+                    <div class="description text-center text-lg-start">
+                        After studying Six Sigma, there are many paths you can take to further your knowledge and career.
+                        <br><br>
+                        Depending on your goals, you may choose to pursue Lean Six Sigma certification,
+                        study advanced statistical analysis or focus on specific areas such as operations management or project management.
+                        With the right guidance and resources, you can make the most of the knowledge gained from studying Six Sigma and hone your skills for future success.
+                    </div>
+                    <div class="text-center text-lg-start">
+                        <a class="enroll-btn" href="#">Enroll Now</a>
+                    </div>
+                </div>
+                <form class="career-success-form col-12 col-lg-6 d-flex flex-column justify-content-start align-items-end mt-5 mt-lg-0">
+                    <div class="row col-12">
+                        <div class="col-6">
+                            <label for="first-name" class="form-label">First name</label>
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="first-name">
+                        </div>
+                        <div class="col-6">
+                            <label for="Last-name" class="form-label">Last name</label>
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="Last-name">
+                        </div>
+                    </div>
+                    <div class="col-12 row mt-3">
+                        <div>
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Email" aria-label="email" id="email">
+                        </div>
+                    </div>
+                    <div class="col-12 row mt-3">
+                        <div>
+                            <label for="country" class="form-label">Country</label>
+                            <input type="text" class="form-control" placeholder="Select your country" aria-label="country" id="country">
+                        </div>
+                    </div>
+                    <div class="col-12 row mt-3">
+                        <div>
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" placeholder="Phone" aria-label="phone" id="phone">
+                        </div>
+                    </div>
+                    <div class="col-12 row mt-3">
+                        <div>
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" placeholder="Type your message here" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <a class="enquire-btn d-flex ms-lg-4 mx-auto me-auto" href="#">Enquire</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Reviews Section -->
+    <section class="student-reviews">
+        <div class="container-sm">
+            <div class="section-title text-center text-lg-start">
+                What our students say
+            </div>
+            <div class="slider-section col-12 d-flex column-gap-5">
+                <div class="col-lg-2 d-none d-lg-block">
+                    <img class="box-quote-img" src="images/bxs_quote-left.png" alt="">
+                </div>
+                <div class="slider-wrapper col-12 col-lg-10 d-flex align-items-center flex-column flex-lg-row">
+                    <div id="first-slider" class="splide splide_2 col-12 col-lg-9 col-xl-10">
+                        <div class="splide__track ms-auto">
+                            <div class="splide__list">
+                                <div class="splide__slide">
+                                    <div class="splide-container position-relative">
+                                        <div class="review-text text-center text-lg-start">
+                                            The courses were well mapped out and easy to navigate. I was impressed by the customer support team.
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-3 pt-5 justify-content-center justify-content-lg-start text-center text-lg-start mx-auto mx-lg-0">
+                                            <img src="images/review-person-1.jpg" alt="" class="rounded-circle object-fit-cover">
+                                            <div class="review-details">
+                                                <div class="review-name">Kevin Watson</div>
+                                                <div class="review-title">Business Analyst</div>
+                                            </div>
+                                        </div>
+                                        <img class="d-none d-sm-block d-lg-none position-absolute top-0 start-0 m-4" src="images/bxs_quote-left.png" alt="" width="75">
+                                    </div>
+                                </div>
+                                <div class="splide__slide">
+                                    <div class="splide-container position-relative">
+                                        <div class="review-text text-center text-lg-start">
+                                            The curriculum was thoughtfully organized, and I appreciated the prompt assistance from their support team.
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-3 pt-5 justify-content-center justify-content-lg-start text-center text-lg-start mx-auto mx-lg-0">
+                                            <img src="images/review-person-2.jpg" alt="" class="rounded-circle object-fit-cover">
+                                            <div class="review-details">
+                                                <div class="review-name">Sarah Walter</div>
+                                                <div class="review-title">Project Manager</div>
+                                            </div>
+                                        </div>
+                                        <img class="d-none d-sm-block d-lg-none position-absolute top-0 start-0 m-4" src="images/bxs_quote-left.png" alt="" width="75">
+
+                                    </div>
+                                </div>
+                                <div class="splide__slide">
+                                    <div class="splide-container position-relative">
+                                        <div class="review-text text-center text-lg-start">
+                                            Navigating the course content was a breeze, and the customer support exceeded my expectations
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-3 pt-5 justify-content-center justify-content-lg-start text-center text-lg-start mx-auto mx-lg-0">
+                                            <img src="images/review-person-3.jpg" alt="" class="rounded-circle object-fit-cover">
+                                            <div class="review-details">
+                                                <div class="review-name">David Cruz</div>
+                                                <div class="review-title">Business Manager</div>
+                                            </div>
+                                        </div>
+                                        <img class="d-none d-sm-block d-lg-none position-absolute top-0 start-0 m-4" src="images/bxs_quote-left.png" alt="" width="75">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start prev-next-btns col-auto col-lg-3 col-xl-2 ps-lg-4 ps-0 mt-5 mt-lg-0">
+                        <button id="btnPrev" class="d-flex align-items-center"><i class="fa-solid fa-angle-left fs-5"></i></button>
+                        <button id="btnNext" class="d-flex align-items-center"><i class="fa-solid fa-angle-right fs-5"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trustpilot Section -->
+    <section class="trustpilot">
+        <div class="container-sm">
+            <div class="trustpilot-logo d-flex justify-content-center mx-auto col-10 col-lg-6">
+                <img src="images/trustpilot-img.png" alt="truspilot-log">
+            </div>
+        </div>
+    </section>
+
+    <!-- Answered Questions Section -->
+    <section class="answered-questions">
+        <div class="container">
+            <div class="section-title text-center text-lg-start">
+                We answered your questions
+            </div>
+            <div class="d-flex flex-column flex-lg-row column-gap-5 mt-5">
+                <div class="contact-us-text col-12 col-lg-6 me-auto text-center text-lg-start">
+                    Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
+                    <br><br>
+                    Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos <br>
+                    <a href="#">Contact us</a>
+                </div>
+                <div class="col-lg-6 col-12 mt-5 mt-lg-0 ms-3 ms-lg-0">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="faq-title accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                                    How can I join this webinar?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar.
+                                    Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna.
+                                    Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia.
+                                    Aliquam in elementum tellus.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="faq-title accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    How to register to a specific session?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar.
+                                    Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna.
+                                    Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia.
+                                    Aliquam in elementum tellus.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="faq-title accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Is this right webinar for my career progression?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar.
+                                    Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna.
+                                    Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia.
+                                    Aliquam in elementum tellus.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="faq-title accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    What will I gain from this webinar?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar.
+                                    Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna.
+                                    Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia.
+                                    Aliquam in elementum tellus.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="faq-title accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    Can I contact the couch who conduct this webinar?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar.
+                                    Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna.
+                                    Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia.
+                                    Aliquam in elementum tellus.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="faq-title accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                    How to register to a specific session?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar.
+                                    Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna.
+                                    Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia.
+                                    Aliquam in elementum tellus.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="faq-title accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                    How to register to a specific session?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar.
+                                    Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna.
+                                    Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia.
+                                    Aliquam in elementum tellus.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Webinars -->
+    <section class="upcoming-webinars">
+        <div class="container">
+            <div class="section-title text-center text-lg-start">
+                Join with us on upcoming webinars
+            </div>
+            <div class="slider-wrapper my-5">
+                <div id="second-slider" class="splide splide_1">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide">
+                                <div class="upcoming-webinar-card p-4 rounded-2  d-flex column-gap-3">
+                                    <div>
+                                        <img src="images/webinar-image.png" alt="">
+                                    </div>
+                                    <div class="d-flex flex-column row-gap-2">
+                                        <div class="ab-name">Pearson BTEC</div>
+                                        <div class="webinar-name">Advanced Diploma in Baking and Cake Decorating</div>
+                                        <div class="webinar-date">3rd August, 2023</div>
+                                        <div class="learn-more mt-3">
+                                            <a class="learn-more-btn" href="#">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="upcoming-webinar-card p-4 rounded-2 d-flex column-gap-3">
+                                    <div>
+                                        <img src="images/webinar-image.png" alt="">
+                                    </div>
+                                    <div class="d-flex flex-column row-gap-2">
+                                        <div class="ab-name">Pearson BTEC</div>
+                                        <div class="webinar-name">Advanced Diploma in Baking and Cake Decorating</div>
+                                        <div class="webinar-date">3rd August, 2023</div>
+                                        <div class="learn-more mt-3">
+                                            <a class="learn-more-btn" href="#">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="upcoming-webinar-card p-4 rounded-2 d-flex column-gap-3">
+                                    <div>
+                                        <img src="images/webinar-image.png" alt="">
+                                    </div>
+                                    <div class="d-flex flex-column row-gap-2">
+                                        <div class="ab-name">Pearson BTEC</div>
+                                        <div class="webinar-name">Advanced Diploma in Baking and Cake Decorating</div>
+                                        <div class="webinar-date">3rd August, 2023</div>
+                                        <div class="learn-more mt-3">
+                                            <a class="learn-more-btn" href="#">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="upcoming-webinar-card p-4 rounded-2 d-flex column-gap-3">
+                                    <div>
+                                        <img src="images/webinar-image.png" alt="">
+                                    </div>
+                                    <div class="d-flex flex-column row-gap-2">
+                                        <div class="ab-name">Pearson BTEC</div>
+                                        <div class="webinar-name">Advanced Diploma in Baking and Cake Decorating</div>
+                                        <div class="webinar-date">3rd August, 2023</div>
+                                        <div class="learn-more mt-3">
+                                            <a class="learn-more-btn" href="#">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prev-next-btns d-flex column-gap-4 justify-content-center mt-5">
+                    <button id="btnPrev2" class="d-flex align-items-center"><i class="fa-solid fa-angle-left fs-5"></i></button>
+                    <button id="btnNext2" class="d-flex align-items-center"><i class="fa-solid fa-angle-right fs-5"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
