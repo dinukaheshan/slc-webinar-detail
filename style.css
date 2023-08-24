@@ -335,6 +335,14 @@ a {
     color: #9DCFD8;
 }
 
+.industry-experts .tutor-description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #313B3D;
+}
+
 /* Key Takeaways */
 
 .key-takeaways .section-title {
@@ -369,12 +377,12 @@ a {
     color: #313B3D;
 }
 
-.unique-perks .takeaways i {
+.unique-perks .perks i {
     font-size: 10px;
     color: #0AA4BD;
 }
 
-.unique-perks .takeaways span {
+.unique-perks .perks span {
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
@@ -545,6 +553,7 @@ a {
 /* Trustpilot Section */
 
 .trustpilot {
+    margin-top: 60px !important;
     background: linear-gradient(125.48deg, rgba(10, 164, 189, 0.12) 1.19%, rgba(0, 165, 111, 0.12) 97.8%);
 }
 
@@ -694,16 +703,13 @@ a {
 
 
 /* Media Queries */
-
 @media (max-width: 1400px) {
 
     /* Tutor Section */
-
     .tutor .tutor-image-card {
         height: 275px;
     }
 }
-
 
 @media (max-width: 1200px) {
 
@@ -717,7 +723,6 @@ a {
         padding-left: 1rem !important;
     }
 }
-
 
 @media (max-width: 992px) {
 
@@ -746,7 +751,6 @@ a {
     }
 }
 
-
 @media(max-width:767px) {
 
     /* Student Reviews */
@@ -759,9 +763,175 @@ a {
 
     /* All Sections */
 
+    .container {
+        width: 500px !important;
+    }
+
     section {
         margin-top: 60px;
     }
+
+    /* Hero */
+    .hero .hero-title {
+        font-size: 36px !important;
+    }
+
+    .hero .webinar-point .text {
+        font-size: 16px;
+    }
+
+    /* Live Webinar */
+    .live-webinar .live-webinar-text .title {
+        font-size: 24px;
+    }
+
+    .live-webinar .live-webinar-text .description {
+        font-size: 16px;
+    }
+
+    .live-webinar .join-free-btn {
+        font-size: 14px;
+    }
+
+    .live-webinar .live-webinar-form label,
+    .live-webinar .live-webinar-form input::placeholder,
+    .live-webinar .live-webinar-form textarea::placeholder {
+        font-size: 16px !important;
+    }
+
+    .live-webinar .live-webinar-form input,
+    .live-webinar .live-webinar-form textarea {
+        font-size: 16px !important;
+    }
+
+    .live-webinar .enquire-btn {
+        font-size: 14px !important;
+    }
+
+
+    /* Line Up */
+    .line-up .section-title {
+        font-size: 24px;
+    }
+
+    .line-up .download-btn {
+        font-size: 14px;
+    }
+
+    .line-up .line-up-item span {
+        font-size: 16px;
+    }
+
+    .line-up .join-free-btn {
+        font-size: 14px;
+    }
+
+
+    /* Session Plan */
+
+    .session-plan .section-title {
+        font-size: 24px;
+    }
+
+    .session-plan .plan-details .number {
+        font-size: 20px;
+    }
+
+    .session-plan .plan-details .duration,
+    .session-plan .plan-details .description {
+        font-size: 16px;
+    }
+
+    .session-plan .plan-details .plan .details-list span {
+        font-size: 14px;
+    }
+
+    /* Free Webinar Section */
+
+    .free-webinar .section-title {
+        font-size: 24px;
+    }
+
+    .free-webinar .free-webinar-text,
+    .free-webinar .free-webinar-text span {
+        font-size: 16px;
+    }
+
+    .free-webinar .free-webinar-brochure-btn {
+        font-size: 14px;
+    }
+
+    /* Industry Experts */
+
+    .industry-experts .section-title {
+        font-size: 24px;
+    }
+
+    .industry-experts .tutor-name {
+        font-size: 20px;
+    }
+
+    .industry-experts .tutor-description {
+        font-size: 16px;
+    }
+
+    /* Key Takeaways */
+    .key-takeaways .section-title {
+        font-size: 24px;
+    }
+
+    .key-takeaways .takeaways span {
+        font-size: 16px
+    }
+
+    .key-takeaways .takeaways i {
+        font-size: 8px;
+        color: #0AA4BD;
+    }
+
+    /* Unique Perks */
+
+    .unique-perks .section-title {
+        font-size: 24px;
+    }
+
+    .unique-perks .perks span {
+        font-size: 16px;
+    }
+
+    .unique-perks .perks i {
+        font-size: 8px;
+        color: #0AA4BD;
+    }
+
+    /* Career Success  */
+    .career-success .career-success-text .title {
+        font-size: 24px;
+    }
+
+    .career-success .career-success-text .description {
+        font-size: 16px;
+    }
+
+    .career-success .enroll-btn {
+        font-size: 14px;
+    }
+
+    .career-success .career-success-form label,
+    .career-success .career-success-form input::placeholder,
+    .career-success .career-success-form textarea::placeholder {
+        font-size: 16px !important;
+    }
+
+    .career-success .career-success-form input,
+    .career-success .career-successr-form textarea {
+        font-size: 16px !important;
+    }
+
+    .career-success .enquire-btn {
+        font-size: 14px !important;
+    }
+
 
     /* Student Reviews Section */
 
@@ -790,6 +960,60 @@ a {
     .student-reviews .splide-container {
         height: 300px !important;
     }
+
+    .student-reviews #btnPrev,
+    .student-reviews #btnNext {
+        border: 2px solid #FF9B43;
+        padding: 2px 6px;
+    }
+
+    /* Answered Questions */
+    .answered-questions .section-title {
+        font-size: 24px;
+    }
+
+    .answered-questions .contact-us-text {
+        font-size: 16px;
+    }
+
+    .answered-questions .contact-us-text a {
+        font-size: 16px;
+    }
+
+    .answered-questions .faq-title {
+        font-size: 16px !important;
+    }
+
+    .answered-questions .accordion-body {
+        font-size: 16px !important;
+    }
+
+    /* Upcoming Webinars */
+    .upcoming-webinars .section-title {
+        font-size: 24px;
+    }
+
+    .upcoming-webinars .ab-name {
+        font-size: 12px;
+    }
+
+    .upcoming-webinars .webinar-name {
+        font-size: 16px;
+    }
+
+    .upcoming-webinars .webinar-date {
+        font-size: 14px;
+    }
+
+    .upcoming-webinars .learn-more-btn {
+        font-size: 14px;
+    }
+
+    .upcoming-webinars #btnPrev2,
+    .upcoming-webinars #btnNext2 {
+        border: 2px solid #FF9B43;
+        padding: 2px 6px;
+    }
 }
 
 @media (max-width: 500px) {}
@@ -802,4 +1026,4 @@ a {
     }
 }
 
-@media (max-width: 350px) {}
+@media (max-width: 400px) {}
