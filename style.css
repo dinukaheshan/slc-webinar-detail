@@ -763,12 +763,10 @@ a {
 
     /* All Sections */
 
-    .container {
-        width: 500px !important;
-    }
-
     section {
         margin-top: 60px;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
     }
 
     /* Hero */
@@ -778,6 +776,10 @@ a {
 
     .hero .webinar-point .text {
         font-size: 16px;
+    }
+
+    .hero .play-btn {
+        width: 10%;
     }
 
     /* Live Webinar */
@@ -849,11 +851,13 @@ a {
     /* Free Webinar Section */
 
     .free-webinar .section-title {
+        text-align: center;
         font-size: 24px;
     }
 
     .free-webinar .free-webinar-text,
     .free-webinar .free-webinar-text span {
+        text-align: center;
         font-size: 16px;
     }
 
@@ -864,15 +868,27 @@ a {
     /* Industry Experts */
 
     .industry-experts .section-title {
+        text-align: center;
         font-size: 24px;
     }
 
     .industry-experts .tutor-name {
-        font-size: 20px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .industry-experts .tutor-title {
+        text-align: center;
+        font-size: 16px;
     }
 
     .industry-experts .tutor-description {
+        text-align: center;
         font-size: 16px;
+    }
+
+    .industry-experts .tutor-image img {
+        width: 80%;
     }
 
     /* Key Takeaways */
@@ -957,6 +973,14 @@ a {
         font-size: 14px;
     }
 
+    .student-reviews .review-text {
+        font-size: 16px;
+    }
+
+    .student-reviews .review-name {
+        font-size: 14px;
+    }
+
     .student-reviews .splide-container {
         height: 300px !important;
     }
@@ -1016,7 +1040,11 @@ a {
     }
 }
 
-@media (max-width: 500px) {}
+@media (max-width: 500px) {
+    .hero .hero-title {
+        font-size: 28px !important;
+    }
+}
 
 @media (max-width: 475px) {
 
@@ -1025,5 +1053,3 @@ a {
         padding: 40px 20px;
     }
 }
-
-@media (max-width: 400px) {}
