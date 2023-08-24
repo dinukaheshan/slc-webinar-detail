@@ -157,6 +157,59 @@ a {
     border-radius: 8px !important;
 }
 
+
+/* Line Up */
+
+.line-up .section-title {
+    margin-top: -10px !important;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: left;
+    color: #313B3D;
+}
+
+.line-up .download-btn {
+    background: #ffffff;
+    color: #FF9B43;
+    border: 1px solid #FF9B43;
+    border-radius: 8px;
+    padding: 10px 40px;
+    transition: all 500ms ease;
+}
+
+.line-up .download-btn:hover {
+    cursor: pointer;
+    background: #FF9B43;
+    color: #ffffff;
+}
+
+.line-up .line-up-item {
+    background: linear-gradient(125.89deg, rgb(10, 164, 189, 0.1) 7.55%, rgb(0, 165, 111, 0.1) 124.24%);
+    padding: 25px 40px;
+    border-radius: 0 0 32px 0;
+}
+
+.line-up .line-up-item span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #313B3D;
+}
+
+.line-up .join-free-btn {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #0AA4BD;
+    padding: 10px 20px;
+    border-radius: 8px !important;
+}
+
+
 /* Session Plan */
 
 .session-plan .section-title {
@@ -217,58 +270,6 @@ a {
     line-height: 22px;
     text-align: left;
     color: #313B3D;
-}
-
-
-/* Line Up */
-
-.line-up .section-title {
-    margin-top: -10px !important;
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 40px;
-    text-align: left;
-    color: #313B3D;
-}
-
-.line-up .download-btn {
-    background: #ffffff;
-    color: #FF9B43;
-    border: 1px solid #FF9B43;
-    border-radius: 8px;
-    padding: 10px 40px;
-    transition: all 500ms ease;
-}
-
-.line-up .download-btn:hover {
-    cursor: pointer;
-    background: #FF9B43;
-    color: #ffffff;
-}
-
-.line-up .line-up-item {
-    background: linear-gradient(125.89deg, rgb(10, 164, 189, 0.1) 7.55%, rgb(0, 165, 111, 0.1) 124.24%);
-    padding: 25px 40px;
-    border-radius: 0 0 32px 0;
-}
-
-.line-up .line-up-item span {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    color: #313B3D;
-}
-
-.line-up .join-free-btn {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 23px;
-    text-align: center;
-    color: #FFFFFF;
-    background: #0AA4BD;
-    padding: 10px 20px;
-    border-radius: 8px !important;
 }
 
 /* Free Webinar */
@@ -720,14 +721,24 @@ a {
 
 @media (max-width: 992px) {
 
-    /* Student Reviews Section */
+    /* Hero */
+    .hero .video-thumbnail {
+        width: 100% !important;
+    }
 
+    .hero .play-btn {
+        left: 50%;
+    }
+
+    /* Student Reviews Section */
     .student-reviews .splide-container {
         margin: 14px;
         border-radius: 28px;
         padding: 60px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        height: 320px !important;
     }
+
 
     .student-reviews .review-text {
         width: 75%;
@@ -736,11 +747,17 @@ a {
 }
 
 
-@media(max-width:767px) {}
+@media(max-width:767px) {
+
+    /* Student Reviews */
+    .student-reviews .splide-container {
+        height: 350px !important;
+    }
+}
 
 @media (max-width: 575px) {
 
-    /* All Section */
+    /* All Sections */
 
     section {
         margin-top: 60px;
@@ -769,10 +786,20 @@ a {
     .student-reviews .review-title {
         font-size: 14px;
     }
+
+    .student-reviews .splide-container {
+        height: 300px !important;
+    }
 }
 
 @media (max-width: 500px) {}
 
-@media (max-width: 475px) {}
+@media (max-width: 475px) {
+
+    /* Student Reviews */
+    .student-reviews .splide-container {
+        padding: 40px 20px;
+    }
+}
 
 @media (max-width: 350px) {}
