@@ -1038,6 +1038,10 @@ a {
         border: 2px solid #FF9B43;
         padding: 2px 6px;
     }
+
+    .upcoming-webinars .webinar-image {
+        border-radius: 8px;
+    }
 }
 
 @media (max-width: 500px) {
