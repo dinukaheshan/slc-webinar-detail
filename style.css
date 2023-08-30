@@ -818,6 +818,7 @@ a {
 
     .line-up .download-btn {
         font-size: 14px;
+        padding: 10px !important;
     }
 
     .line-up .line-up-item span {
