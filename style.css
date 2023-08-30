@@ -78,6 +78,15 @@ a {
 .live-webinar {
     background: rgb(138, 147, 149, 0.1);
     padding: 60px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.live-webinar .form-vector {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .live-webinar .live-webinar-text .title {
@@ -174,7 +183,7 @@ a {
     color: #FF9B43;
     border: 1px solid #FF9B43;
     border-radius: 8px;
-    padding: 10px 40px;
+    padding: 10px 20px;
     transition: all 500ms ease;
 }
 
@@ -343,6 +352,19 @@ a {
     color: #313B3D;
 }
 
+.takeaways-unique {
+    position: relative;
+    z-index: 10;
+}
+
+.takeaways-unique .takeaways-union-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
 /* Key Takeaways */
 
 .key-takeaways .section-title {
@@ -396,6 +418,15 @@ a {
 .career-success {
     background: rgb(138, 147, 149, 0.1);
     padding: 60px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.career-success .form-vector {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .career-success .career-success-text .title {
