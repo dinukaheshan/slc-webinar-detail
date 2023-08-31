@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://www.study365.co.uk/wp-content/themes/study365/assets/css/form-validation-bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
     <link rel="stylesheet" href="style.css">
     <title>SLC - Webinar Detail Page</title>
 </head>
@@ -80,7 +83,7 @@
 
     <!-- Live Webinar Section -->
     <section class="live-webinar">
-        <img class="form-vector" src="images/form-vector.png" alt="">
+        <img class="form-vector d-none d-lg-block" src="images/form-vector.png" alt="">
         <div class="container">
             <div class="d-flex flex-column flex-lg-row col-12 column-gap-lg-2 column-gap-xl-2">
                 <div class="live-webinar-text col-lg-6 col-12 text-lg-start text-center">
@@ -94,21 +97,30 @@
                     </div>
                     <a class="join-free-btn" href="#">Join Free</a>
                 </div>
-                <form class="live-webinar-form col-lg-6 col-12 d-flex flex-column justify-content-start align-items-center align-items-lg-end mt-5 mt-lg-0">
+                <form action="" method="post" id="contact-form" novalidate method="post" class="needs-validation live-webinar-form col-lg-6 col-12 d-flex flex-column justify-content-start align-items-center align-items-lg-end mt-5 mt-lg-0">
                     <div class="row col-12">
                         <div class="col-6">
-                            <label for="first-name" class="form-label">First name</label>
-                            <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="first-name">
+                            <label for="first-name" class="form-label">First name *</label>
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="first-name" pattern="[A-Za-z ]{3,50}" required>
+                            <div class="invalid-feedback">
+                                Please enter a first name.
+                            </div>
                         </div>
                         <div class="col-6">
-                            <label for="Last-name" class="form-label">Last name</label>
-                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="Last-name">
+                            <label for="Last-name" class="form-label">Last name *</label>
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="Last-name" pattern="[A-Za-z ]{3,50}" required>
+                            <div class="invalid-feedback">
+                                Please enter a last name.
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 row mt-3">
                         <div>
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" placeholder="Email" aria-label="email" id="email">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" class="form-control" placeholder="Email" aria-label="email" id="email" pattern="[a- z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid email.
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 row mt-3">
@@ -118,9 +130,12 @@
                         </div>
                     </div>
                     <div class="col-12 row mt-3">
-                        <div>
+                        <div class="d-flex flex-column">
                             <label for="phone" class="form-label">Phone</label>
-                            <input type="tel" class="form-control" placeholder="Phone" aria-label="phone" id="phone">
+                            <input type="tel" id="phone" class="tel-input form-control" required="required" name="phone" pattern="^\+(?:[0-9] ?){6,14}[0-9]$">
+                            <div class="invalid-feedback">
+                                Please enter a valid phone number.
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 row mt-3">
@@ -129,7 +144,7 @@
                             <textarea class="form-control" id="message" placeholder="Type your message here" rows="3"></textarea>
                         </div>
                     </div>
-                    <a class="enquire-btn d-flex ms-lg-4 mx-auto me-auto" href="#">Enquire</a>
+                    <button type="submit" class="enquire-btn mt-5 d-flex ms-lg-4 mx-auto " id="live-webinar-submit-btn" name="submit_form">Enquire</button>
                 </form>
             </div>
         </div>
@@ -532,7 +547,7 @@
 
     <!-- Career Success Roadmap Section -->
     <section class="career-success">
-        <img class="form-vector" src="images/form-vector.png" alt="">
+        <img class="form-vector d-none d-lg-block" src="images/form-vector.png" alt="">
         <div class="container">
             <div class="d-flex col-12 flex-column flex-lg-row column-gap-lg-2 column-gap-xl-2">
                 <div class="career-success-text col-lg-6 col-12">
@@ -548,21 +563,30 @@
                         <a class="enroll-btn" href="#">Enroll Now</a>
                     </div>
                 </div>
-                <form class="career-success-form col-12 col-lg-6 d-flex flex-column justify-content-start align-items-center align-items-lg-end mt-5 mt-lg-0">
+                <form action="" method="post" id="contact-form" novalidate method="post" class="needs-validation career-success-form col-12 col-lg-6 d-flex flex-column justify-content-start align-items-center align-items-lg-end mt-5 mt-lg-0">
                     <div class="row col-12">
                         <div class="col-6">
-                            <label for="first-name" class="form-label">First name</label>
-                            <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="first-name">
+                            <label for="first-name" class="form-label">First name *</label>
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="first-name" pattern="[A-Za-z ]{3,50}" required>
+                            <div class="invalid-feedback">
+                                Please enter a first name.
+                            </div>
                         </div>
                         <div class="col-6">
-                            <label for="Last-name" class="form-label">Last name</label>
-                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="Last-name">
+                            <label for="Last-name" class="form-label">Last name *</label>
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="Last-name" pattern="[A-Za-z ]{3,50}" required>
+                            <div class="invalid-feedback">
+                                Please enter a last name.
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 row mt-3">
                         <div>
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" placeholder="Email" aria-label="email" id="email">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" class="form-control" placeholder="Email" aria-label="email" id="email" pattern="[a- z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid email.
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 row mt-3">
@@ -572,9 +596,12 @@
                         </div>
                     </div>
                     <div class="col-12 row mt-3">
-                        <div>
+                        <div class="d-flex flex-column">
                             <label for="phone" class="form-label">Phone</label>
-                            <input type="tel" class="form-control" placeholder="Phone" aria-label="phone" id="phone">
+                            <input type="tel" id="phone" class="tel-input form-control" required="required" name="phone" pattern="^\+(?:[0-9] ?){6,14}[0-9]$">
+                            <div class="invalid-feedback">
+                                Please enter a valid phone number.
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 row mt-3">
@@ -583,7 +610,7 @@
                             <textarea class="form-control" id="message" placeholder="Type your message here" rows="3"></textarea>
                         </div>
                     </div>
-                    <a class="enquire-btn d-flex mx-auto me-auto" href="#">Enquire</a>
+                    <button type="submit" class="enquire-btn mt-5 d-flex ms-lg-4 mx-auto " id="career-success-submit-btn" name="career_form">Enquire</button>
                 </form>
             </div>
         </div>
@@ -880,5 +907,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://jsuites.net/v4/jsuites.js"></script>
     <script src="script.js"></script>
+
 </body>
+
+</html>
