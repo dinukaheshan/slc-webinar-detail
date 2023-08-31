@@ -153,7 +153,9 @@ a {
     box-shadow: none;
 }
 
-.live-webinar .enquire-btn {
+.live-webinar .enquire-btn,
+.live-webinar .enquire-btn:active,
+.live-webinar .enquire-btn:focus {
     display: inline-block;
     margin-top: 30px !important;
     font-size: 16px;
@@ -205,6 +207,12 @@ a {
     line-height: 22px;
     text-align: left;
     color: #313B3D;
+}
+
+.line-up .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 24px;
 }
 
 .line-up .join-free-btn {
@@ -493,7 +501,9 @@ a {
     box-shadow: none;
 }
 
-.career-success .enquire-btn {
+.career-success .enquire-btn,
+.career-success .enquire-btn:active,
+.career-success .enquire-btn:focus {
     display: inline-block;
     margin-top: 30px !important;
     font-size: 16px;
@@ -505,7 +515,6 @@ a {
     padding: 10px 30px;
     border-radius: 8px !important;
 }
-
 
 /* Student Reviews Section */
 
@@ -805,6 +814,10 @@ a {
         font-size: 36px !important;
     }
 
+    .hero .ab-logo-image {
+        width: 40%;
+    }
+
     .hero .webinar-point .text {
         font-size: 16px;
     }
@@ -824,6 +837,7 @@ a {
 
     .live-webinar .join-free-btn {
         font-size: 14px;
+        padding: 8px 20px;
     }
 
     .live-webinar .live-webinar-form label,
@@ -838,7 +852,8 @@ a {
     }
 
     .live-webinar .enquire-btn {
-        font-size: 14px !important;
+        font-size: 14px;
+        padding: 8px 20px;
     }
 
 
@@ -858,6 +873,7 @@ a {
 
     .line-up .join-free-btn {
         font-size: 14px;
+        padding: 8px 18px;
     }
 
 
@@ -895,6 +911,7 @@ a {
 
     .free-webinar .free-webinar-brochure-btn {
         font-size: 14px;
+        padding: 8px 14px;
     }
 
     /* Industry Experts */
@@ -963,6 +980,7 @@ a {
 
     .career-success .enroll-btn {
         font-size: 14px;
+        padding: 8px 20px;
     }
 
     .career-success .career-success-form label,
@@ -978,6 +996,7 @@ a {
 
     .career-success .enquire-btn {
         font-size: 14px !important;
+        padding: 8px 20px;
     }
 
 
@@ -1014,7 +1033,11 @@ a {
     }
 
     .student-reviews .splide-container {
-        height: 300px !important;
+        height: 275px !important;
+    }
+
+    .student-reviews .prev-next-btns {
+        display: none !important;
     }
 
     .student-reviews #btnPrev,
@@ -1063,6 +1086,11 @@ a {
 
     .upcoming-webinars .learn-more-btn {
         font-size: 14px;
+        padding: 8px 28px;
+    }
+
+    .upcoming-webinars .prev-next-btns {
+        display: none !important;
     }
 
     .upcoming-webinars #btnPrev2,
@@ -1073,7 +1101,9 @@ a {
 
     .upcoming-webinars .webinar-image {
         border-radius: 8px;
+        width: 50%;
     }
+
 }
 
 @media (max-width: 500px) {
