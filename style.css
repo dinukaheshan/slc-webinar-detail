@@ -784,7 +784,6 @@ a {
         height: 320px !important;
     }
 
-
     .student-reviews .review-text {
         width: 75%;
         margin: 0 auto;
@@ -804,7 +803,7 @@ a {
     /* All Sections */
 
     section {
-        margin-top: 60px;
+        margin-top: 60px !important;
         padding-left: 5px !important;
         padding-right: 5px !important;
     }
