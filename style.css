@@ -128,7 +128,8 @@ a {
 }
 
 .live-webinar .live-webinar-form input::placeholder,
-.live-webinar .live-webinar-form textarea::placeholder {
+.live-webinar .live-webinar-form textarea::placeholder,
+.live-webinar .live-webinar-form select::placeholder {
     color: #8A9395 !important;
 }
 
@@ -145,11 +146,32 @@ a {
     border: 1px solid #8A9395 !important;
 }
 
-.live-webinar input:focus {
+.live-webinar .live-webinar-form select {
+    height: 50px !important;
+    background: transparent !important;
+    border: 1px solid #8A9395 !important;
+    color: #313B3D !important;
+}
+
+.live-webinar .select-wrapper select {
+    border-radius: 4px;
+    padding-block: 14px;
+    background-color: transparent;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.live-webinar .iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {
+    left: 10px;
+}
+
+.live-webinar input:focus,
+.live-webinar select:focus {
     outline: none;
 }
 
-.live-webinar .form-control:focus {
+.live-webinar .form-control:focus,
+.live-webinar .form-select:focus {
     box-shadow: none;
 }
 
@@ -491,6 +513,25 @@ a {
     background: transparent !important;
     border: 1px solid #8A9395 !important;
     color: #313B3D !important;
+}
+
+.career-success .career-success-form select {
+    height: 50px !important;
+    background: transparent !important;
+    border: 1px solid #8A9395 !important;
+    color: #313B3D !important;
+}
+
+.career-success .select-wrapper select {
+    border-radius: 4px;
+    padding-block: 14px;
+    background-color: transparent;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.career-success .iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {
+    left: 10px;
 }
 
 .career-success input:focus {

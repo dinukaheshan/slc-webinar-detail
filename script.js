@@ -103,37 +103,31 @@ btnPrev2.addEventListener('click', e => {
 })();
 
 
-// Get all the phone input field elements
-const phoneInputFields = document.querySelectorAll("input[type='tel']");
+// Create a function to initialize the phone number input
+function initializePhoneNumberInput(inputId, countryDropdownId) {
+    var phoneInput = document.querySelector("#" + inputId);
+    var countryDropdown = document.querySelector("#" + countryDropdownId);
 
-// Loop through all the phone input fields
-phoneInputFields.forEach(phoneInputField => {
-    // Initialize the phone input with preferred countries
-    const phoneInput = window.intlTelInput(phoneInputField, {
-        preferredCountries: ["gb", "us"],
+    // Initialize the phone number input
+    var phone_number = window.intlTelInput(phoneInput, {
+        preferredCountries: ["gb"],
+        separateDialCode: true,
+        allowDropdown: false,
         utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
     });
 
-    //deny enter letters and spcial characters
-    phoneInputField.addEventListener("beforeinput", event => {
-        const input = event.data;
-        if (event.inputType === "insertText" && !/^[0-9]+$/.test(input)) {
-            event.preventDefault();
-        }
+    // Change country code using select dropdown
+    countryDropdown.addEventListener("change", function () {
+        var selectedOption = countryDropdown.options[countryDropdown.selectedIndex];
+        var countryData = selectedOption.getAttribute("data-country-code");
+
+        // Change the preferred country
+        phone_number.setCountry(countryData);
     });
+}
 
-    // Add a submit event listener to the parent form element
-    phoneInputField.form.addEventListener("submit", () => {
-        // Get the selected country data
-        const selectedCountryData = phoneInput.getSelectedCountryData();
-
-        // Get the input value in the E.164 format for the selected country
-        const inputNumber = phoneInput.getNumber(intlTelInputUtils.numberFormat.E164);
-
-        // Get the country code from the input number
-        const countryCode = inputNumber.substring(1, selectedCountryData.dialCode.length + 1);
-
-        // Set the input field value to the formatted phone number and the country code
-        phoneInputField.value = `${phoneInput.getNumber()}`;
-    });
+// Call the initialization function for both phone inputs when the DOM is ready
+document.addEventListener("DOMContentLoaded", function () {
+    initializePhoneNumberInput("phone", "inputCountry");
+    initializePhoneNumberInput("phone-1", "inputCountry-1");
 });
