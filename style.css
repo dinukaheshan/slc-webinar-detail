@@ -39,14 +39,19 @@ a {
     font-weight: 600;
     text-align: left;
     color: #313B3D;
+    line-height: 1.2;
 }
 
 .hero .play-btn {
     position: absolute;
-    left: 45%;
-    top: 60%;
-    transform: translate(-50%, -50%);
+    left: 41%;
+    top: 53%;
+    transition: transform .3s;
     cursor: pointer;
+}
+
+.hero .play-btn:hover {
+    transform: scale(1.1);
 }
 
 .hero .close-btn {
@@ -163,6 +168,36 @@ a {
 
 .live-webinar .iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {
     left: 10px;
+}
+
+.live-webinar .select-wrapper {
+    position: relative;
+}
+
+.live-webinar .select-wrapper #inputCountry {
+    padding-left: 50px;
+}
+
+.live-webinar .select-wrapper.icon-right::before {
+    left: 12px;
+    right: auto;
+}
+
+.live-webinar .select-wrapper::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    width: 45px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-blend-mode: difference;
+    z-index: 1;
+    background-image: url(https://southlondoncollege.org/wp-content/uploads/2023/09/solar_alt-arrow-up-linear.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .live-webinar input:focus,
@@ -295,7 +330,7 @@ a {
 }
 
 .session-plan .plan-details .plan .details-list {
-    margin-left: 10px;
+    padding-left: 15px;
 }
 
 .session-plan .plan-details .plan .details-list i {
@@ -327,6 +362,7 @@ a {
     letter-spacing: 0em;
     text-align: left;
     color: #313B3D;
+    margin-top: 36px;
 }
 
 .free-webinar .free-webinar-text span {
@@ -380,6 +416,14 @@ a {
     line-height: 22px;
     text-align: left;
     color: #313B3D;
+}
+
+.industry-experts .tutor-details.tutor-details-2 {
+    margin-top: 90px !important;
+}
+
+.industry-experts .tutor-image.tutor-image-1 img {
+    margin-top: -45px !important;
 }
 
 .takeaways-unique {
@@ -532,6 +576,36 @@ a {
 
 .career-success .iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {
     left: 10px;
+}
+
+.career-success .select-wrapper {
+    position: relative;
+}
+
+.career-success .select-wrapper #inputCountry-1 {
+    padding-left: 50px;
+}
+
+.career-success .select-wrapper.icon-right::before {
+    left: 12px;
+    right: auto;
+}
+
+.career-success .select-wrapper::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    width: 45px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-blend-mode: difference;
+    z-index: 1;
+    background-image: url(https://southlondoncollege.org/wp-content/uploads/2023/09/solar_alt-arrow-up-linear.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .career-success input:focus {
@@ -706,7 +780,8 @@ a {
 }
 
 .answered-questions .accordion-body {
-    border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+    border-bottom: none !important;
+    padding-top: 2px !important;
 }
 
 .answered-questions div.accordion-item:nth-child(1)>h2:nth-child(1)>button:nth-child(1) {
@@ -777,7 +852,7 @@ a {
 
 .upcoming-webinars .learn-more-btn {
     background: #0AA4BD;
-    padding: 10px 60px;
+    padding: 8px 30px;
     color: #ffffff;
     border-radius: 8px;
 }
@@ -828,6 +903,14 @@ a {
     .student-reviews .review-text {
         width: 75%;
         margin: 0 auto;
+    }
+
+    .industry-experts .tutor-details.tutor-details-2 {
+        margin-top: 20px !important;
+    }
+
+    .industry-experts .tutor-image.tutor-image-1 img {
+        margin-top: 40px !important;
     }
 }
 
@@ -979,6 +1062,7 @@ a {
     .industry-experts .tutor-image img {
         width: 80%;
     }
+
 
     /* Key Takeaways */
     .key-takeaways .section-title {
